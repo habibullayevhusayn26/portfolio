@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080d18">
+    <meta name="description" content="Habibullayev Husayn bajargan veb-saytlar, Telegram botlar, emoji va stikerlar hamda dizayn ishlari.">
+    <title>Mening ishlarim — Habibullayev Husayn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/works.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container" aria-label="Asosiy navigatsiya">
+            <a class="brand" href="index.html">H<span>H</span>.</a>
+            <a class="nav-cta" href="index.html#boglanish">Bog‘lanish <span>↗</span></a>
+        </nav>
+    </header>
+    <main class="container works-page">
+        <a class="back-link mono" href="index.html">← Bosh sahifaga</a>
+        <div class="works-heading">
+            <div>
+                <span class="section-label mono">Habibullayev Husayn / Portfolio</span>
+                <h1>Mening<br><span>ishlarim.</span></h1>
+            </div>
+            <p>Men bajargan ishlar va loyihalar. Yangi ishlarimni muntazam shu yerda ulashib boraman.</p>
+        </div>
+        <p class="works-status" id="works-status" role="status" aria-live="polite">Ishlar yuklanmoqda…</p>
+        <section class="works-grid" id="works-grid" aria-label="Bajarilgan ishlar"></section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span class="mono">© <span id="year"></span> Habibullayev Husayn</span>
+            <div class="footer-links mono"><a href="index.html">Bosh sahifa</a><a href="admin.html">Admin panel</a></div>
+        </div>
+    </footer>
+    <script>document.querySelector("#year").textContent = new Date().getFullYear();</script>
+    <script type="module" src="js/works.js"></script>
+</body>
+</html>
